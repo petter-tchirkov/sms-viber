@@ -1,0 +1,7 @@
+{
+  "extends": ["@nuxtjs/eslint-config-typescript"],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": ["off"],
+    "vue/multiword-component-names": ["off"]
+  }
+}

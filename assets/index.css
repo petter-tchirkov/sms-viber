@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500;600;700;800&display=swap');
+
+.section {
+  @apply bg-white rounded-lg p-4 shadow-md;
+}
+
+html,
+body {
+  font-family: 'Wix Madefor Text', sans-serif;
+}
+
+.p-password input {
+  @apply w-full;
+}
