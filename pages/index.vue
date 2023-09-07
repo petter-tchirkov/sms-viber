@@ -6,7 +6,12 @@
       </template>
     </Header>
     <div class="section">
-      <DataTable :value="expenses" paginator :rows="10" class="p-datatable-sm">
+      <DataTable
+        :value="expenses"
+        paginator
+        :rows="15"
+        class="p-datatable-sm"
+      >
         <template #header>
           <Dropdown
             v-model="selectedOption"
@@ -14,7 +19,10 @@
             placeholder="Фільтрація"
           />
         </template>
-        <Column field="date" header="Дата" />
+        <Column
+          field="date"
+          header="Дата"
+        />
         <Column header="Тип">
           <template #body="{ data }">
             <Tag
@@ -25,7 +33,10 @@
             />
           </template>
         </Column>
-        <Column field="count" header="Кількість" />
+        <Column
+          field="count"
+          header="Кількість"
+        />
       </DataTable>
     </div>
   </section>

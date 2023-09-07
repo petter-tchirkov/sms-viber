@@ -1,11 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  modules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss', 'nuxt-icon'],
+  modules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon',
+    '@pinia/nuxt',
+    '@vueuse/nuxt'
+  ],
   css: [
     'primevue/resources/themes/lara-light-blue/theme.css',
     '@animxyz/core',
-    '~/assets/index.css'
+    '~/assets/index.css',
+    'primeicons/primeicons.css'
   ],
   build: {
     transpile: ['primevue']
